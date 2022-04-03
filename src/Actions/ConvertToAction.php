@@ -27,8 +27,8 @@ class ConvertToAction extends AbstractAction
     public function getAttributes()
     {
         return [
-            'id'     => 'convert_to_btn',
-            'class'  => 'btn btn-sm btn-primary pull-right',
+            'id'    => 'convert_to_btn',
+            'class' => 'btn btn-sm btn-primary pull-right',
         ];
     }
 
