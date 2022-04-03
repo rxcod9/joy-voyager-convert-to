@@ -28,8 +28,7 @@ class ConvertToAction extends AbstractAction
     {
         return [
             'id'     => 'convert_to_btn',
-            'class'  => 'btn btn-primary',
-            'target' => '_blank',
+            'class'  => 'btn btn-sm btn-primary pull-right',
         ];
     }
 
