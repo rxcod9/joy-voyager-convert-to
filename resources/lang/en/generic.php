@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'successfully_replace_keyworded'   => 'Successfully ReplaceKeyworded',
-    'replace_keyword'   => 'ReplaceKeyword',
+    'successfully_convert_toed'   => 'Successfully ConvertToed',
+    'convert_to'   => 'ConvertTo',
 ];

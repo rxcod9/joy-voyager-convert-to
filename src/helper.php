@@ -1,10 +1,10 @@
 <?php
 
-// if (! function_exists('joyVoyagerReplaceKeyword')) {
+// if (! function_exists('joyVoyagerConvertTo')) {
 //     /**
 //      * Helper
 //      */
-//     function joyVoyagerReplaceKeyword($argument1 = null)
+//     function joyVoyagerConvertTo($argument1 = null)
 //     {
 //         //
 //     }

@@ -1,8 +1,8 @@
 <?php
 
-namespace Joy\VoyagerReplaceKeyword\ReplaceKeywords;
+namespace Joy\VoyagerConvertTo\ConvertTos;
 
-class ReplaceKeyword
+class ConvertTo
 {
     /**
      * Create new instance

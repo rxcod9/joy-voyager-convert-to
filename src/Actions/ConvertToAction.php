@@ -1,22 +1,22 @@
 <?php
 
-namespace Joy\VoyagerReplaceKeyword\Actions;
+namespace Joy\VoyagerConvertTo\Actions;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
 use TCG\Voyager\Actions\AbstractAction;
 use TCG\Voyager\Facades\Voyager;
 
-class ReplaceKeywordAction extends AbstractAction
+class ConvertToAction extends AbstractAction
 {
     public function getTitle()
     {
-        return __('joy-voyager-replace-keyword::generic.replace_keyword');
+        return __('joy-voyager-convert-to::generic.convert_to');
     }
 
     public function getIcon()
     {
-        return 'voyager-replace-keyword';
+        return 'voyager-convert-to';
     }
 
     public function getPolicy()
@@ -27,7 +27,7 @@ class ReplaceKeywordAction extends AbstractAction
     public function getAttributes()
     {
         return [
-            'id'     => 'replace_keyword_btn',
+            'id'     => 'convert_to_btn',
             'class'  => 'btn btn-primary',
             'target' => '_blank',
         ];
@@ -40,14 +40,14 @@ class ReplaceKeywordAction extends AbstractAction
 
     public function shouldActionDisplayOnDataType()
     {
-        return config('joy-voyager-replace-keyword.enabled', true) !== false
+        return config('joy-voyager-convert-to.enabled', true) !== false
             && isInPatterns(
                 $this->dataType->slug,
-                config('joy-voyager-replace-keyword.allowed_slugs', ['*'])
+                config('joy-voyager-convert-to.allowed_slugs', ['*'])
             )
             && !isInPatterns(
                 $this->dataType->slug,
-                config('joy-voyager-replace-keyword.not_allowed_slugs', [])
+                config('joy-voyager-convert-to.not_allowed_slugs', [])
             );
     }
 
@@ -65,7 +65,7 @@ class ReplaceKeywordAction extends AbstractAction
         // Your macgic here
 
         return redirect()->back()->with([
-            'message'    => __('joy-voyager-replace-keyword::generic.successfully_replace_keyworded') . " {$dataType->getTranslatedAttribute('display_name_singular')}",
+            'message'    => __('joy-voyager-convert-to::generic.successfully_convert_toed') . " {$dataType->getTranslatedAttribute('display_name_singular')}",
             'alert-type' => 'success',
         ]);
     }

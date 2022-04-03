@@ -1,16 +1,16 @@
 {
-    "name": "joy/voyager-replace-keyword",
-    "description": "This Laravel/Voyager module adds VoyagerReplaceKeyword support to Voyager.",
+    "name": "joy/voyager-convert-to",
+    "description": "This Laravel/Voyager module adds VoyagerConvertTo support to Voyager.",
     "keywords": [
         "joy",
-        "replace-keyword",
-        "voyager-replace-keyword",
-        "joy-voyager-replace-keyword",
+        "convert-to",
+        "voyager-convert-to",
+        "joy-voyager-convert-to",
         "cms",
         "voyager",
         "laravel"
     ],
-    "homepage": "https://github.com/rxcod9/joy-voyager-replace-keyword",
+    "homepage": "https://github.com/rxcod9/joy-voyager-convert-to",
     "license": "MIT",
     "authors": [{
         "name": "Ramakant Gangwar",
@@ -35,7 +35,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Joy\\VoyagerReplaceKeyword\\": "src"
+            "Joy\\VoyagerConvertTo\\": "src"
         },
         "files": [
             "src/helper.php"
@@ -47,13 +47,13 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Joy\\VoyagerReplaceKeyword\\Tests\\": "tests"
+            "Joy\\VoyagerConvertTo\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Joy\\VoyagerReplaceKeyword\\VoyagerReplaceKeywordServiceProvider"
+                "Joy\\VoyagerConvertTo\\VoyagerConvertToServiceProvider"
             ]
         }
     },
