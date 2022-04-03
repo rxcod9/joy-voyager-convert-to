@@ -50,25 +50,6 @@ class ConvertToAction extends AbstractAction
             );
     }
 
-    public function massAction($ids, $comingFrom)
-    {
-        // GET THE SLUG, ex. 'posts', 'pages', etc.
-        $slug = $this->getSlug(request());
-
-        // GET THE DataType based on the slug
-        $dataType = Voyager::model('DataType')->where('slug', '=', $slug)->first();
-
-        // Check permission
-        Gate::authorize('browse', app($dataType->model_name));
-
-        // Your macgic here
-
-        return redirect()->back()->with([
-            'message'    => __('joy-voyager-convert-to::generic.successfully_convert_toed') . " {$dataType->getTranslatedAttribute('display_name_singular')}",
-            'alert-type' => 'success',
-        ]);
-    }
-
     protected function getSlug(Request $request)
     {
         if (isset($this->slug)) {
