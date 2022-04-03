@@ -16,7 +16,7 @@ class ConvertToAction extends AbstractAction
 
     public function getIcon()
     {
-        return 'voyager-convert-to';
+        return 'voyager-convert-to fa-solid fa-right-left';
     }
 
     public function getPolicy()
