@@ -3,9 +3,9 @@
 namespace Joy\VoyagerConvertTo\Http\Controllers;
 
 use Joy\VoyagerConvertTo\Http\Traits\ConvertToAction;
-use TCG\Voyager\Http\Controllers\VoyagerBaseController as TCGVoyagerBaseController;
+use Joy\VoyagerCore\Http\Controllers\VoyagerBaseController as BaseVoyagerBaseController;
 
-class VoyagerBaseController extends TCGVoyagerBaseController
+class VoyagerBaseController extends BaseVoyagerBaseController
 {
     use ConvertToAction;
 }
